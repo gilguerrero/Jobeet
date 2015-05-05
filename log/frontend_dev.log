@@ -1,0 +1,21 @@
+May 05 14:32:18 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+May 05 14:32:18 symfony [info] {sfFrontWebController} Action "job/index" does not exist
+May 05 14:32:18 symfony [err] {sfError404Exception} Action "job/index" does not exist.
+May 05 14:32:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 05 14:32:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 05 14:32:19 symfony [info] {sfWebDebugLogger} Configuration 475.03 ms (5)
+May 05 14:32:19 symfony [info] {sfWebDebugLogger} Factories 407.02 ms (1)
+May 05 14:32:21 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+May 05 14:32:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 05 14:32:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 05 14:32:21 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+May 05 14:32:21 symfony [info] {sfPHPView} Render "C:\development\jobeet\lib\vendor\symfony\lib/controller/default/templates/indexSuccess.php"
+May 05 14:32:21 symfony [info] {sfPHPView} Decorate content with "C:\development\jobeet\lib\vendor\symfony\lib\controller\default\templates/defaultLayout.php"
+May 05 14:32:21 symfony [info] {sfPHPView} Render "C:\development\jobeet\lib\vendor\symfony\lib\controller\default\templates/defaultLayout.php"
+May 05 14:32:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 05 14:32:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 05 14:32:21 symfony [info] {sfWebDebugLogger} Configuration 90.00 ms (10)
+May 05 14:32:21 symfony [info] {sfWebDebugLogger} Factories 55.00 ms (1)
+May 05 14:32:21 symfony [info] {sfWebDebugLogger} Action "default/index" 1.00 ms (1)
+May 05 14:32:21 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 43.00 ms (1)
+May 05 14:32:22 symfony [info] {sfWebResponse} Send content (29645 o)
