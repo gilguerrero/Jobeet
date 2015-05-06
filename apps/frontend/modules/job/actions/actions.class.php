@@ -18,6 +18,8 @@ class jobActions extends sfActions
   public function executeShow(sfWebRequest $request)
   {
     $this->job = $this->getRoute()->getObject();
+ 
+    $this->getUser()->addJobToHistory($this->job);
   }
 
   public function executeNew(sfWebRequest $request)
@@ -90,7 +92,7 @@ class jobActions extends sfActions
   public function executeExtend(sfWebRequest $request)
   {
     $request->checkCSRFProtection();
-   
+    
     $job = $this->getRoute()->getObject();
     $this->forward404Unless($job->extend());
    

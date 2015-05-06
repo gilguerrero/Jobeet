@@ -37,7 +37,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
 
   public function getListActions()
   {
-    return array(  'deleteNeverActivated' =>   array(    'label' => 'Delete never activated jobs',    'action' => 'foo',  ),);
+    return array(  'deleteNeverActivated' =>   array(    'label' => 'Delete never activated jobs',  ),);
   }
 
   public function getListBatchActions()
@@ -47,7 +47,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
 
   public function getListParams()
   {
-    return '%%is_activated%% <small>%%jobeet_category%%</small> - %%company%%  (<em>%%email%%</em>) is looking for a %%=position%% (%%location%%))';
+    return '%%is_activated%% <small>%%JobeetCategory%%</small> - %%company%% (<em>%%email%%</em>) is looking for a %%=position%% (%%location%%)';
   }
 
   public function getListLayout()
@@ -109,7 +109,7 @@ abstract class BaseJobGeneratorConfiguration extends sfModelGeneratorConfigurati
       'description' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'how_to_apply' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'token' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
-      'is_public' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Boolean',  'label' => 'Public?',  'help' => 'Whether the job can also be published on affiliate websites',  'or' => 'not',),
+      'is_public' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Boolean',  'label' => 'Public?',),
       'is_activated' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Boolean',  'label' => 'Activated?',  'help' => 'Whether the user has activated the job',  'or' => 'not',),
       'email' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Text',),
       'expires_at' => array(  'is_link' => false,  'is_real' => true,  'is_partial' => false,  'is_component' => false,  'type' => 'Date',),
