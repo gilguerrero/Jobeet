@@ -11400,3 +11400,35 @@ May 07 00:07:33 symfony [info] {sfWebDebugLogger} Partial "job/_list_actions" 8.
 May 07 00:07:33 symfony [info] {sfWebDebugLogger} Partial "job/_list_footer" 3.00 ms (1)
 May 07 00:07:34 symfony [info] {sfWebResponse} Send content (189957 o)
 May 07 00:07:34 symfony [info] {myUser} Remove old flash messages ("notice")
+May 07 14:25:01 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+May 07 14:25:01 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+May 07 14:25:01 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+May 07 14:25:01 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+May 07 14:25:01 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+May 07 14:25:01 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+May 07 14:25:01 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+May 07 14:25:02 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+May 07 14:25:02 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+May 07 14:25:02 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+May 07 14:25:02 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+May 07 14:25:02 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+May 07 14:25:02 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+May 07 14:25:02 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 07 14:25:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 07 14:25:02 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 07 14:25:02 symfony [info] {sfBasicSecurityFilter} Action "job/index" requires authentication, forwarding to "sfGuardAuth/signin"
+May 07 14:25:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 07 14:25:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 07 14:25:02 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+May 07 14:25:02 symfony [info] {sfPHPView} Render "C:/development/jobeet/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/signinSuccess.php"
+May 07 14:25:02 symfony [info] {sfPartialView} Render "C:/development/jobeet/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/_signin_form.php"
+May 07 14:25:02 symfony [info] {sfPHPView} Decorate content with "C:\development\jobeet\apps\backend\templates/layout.php"
+May 07 14:25:02 symfony [info] {sfPHPView} Render "C:\development\jobeet\apps\backend\templates/layout.php"
+May 07 14:25:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+May 07 14:25:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 07 14:25:02 symfony [info] {sfWebDebugLogger} Configuration 214.01 ms (15)
+May 07 14:25:02 symfony [info] {sfWebDebugLogger} Factories 303.02 ms (1)
+May 07 14:25:02 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 73.00 ms (1)
+May 07 14:25:02 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 122.01 ms (1)
+May 07 14:25:02 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 48.00 ms (1)
+May 07 14:25:02 symfony [info] {sfWebResponse} Send content (41682 o)
