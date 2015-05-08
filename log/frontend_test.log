@@ -8,3 +8,13 @@ May 07 20:43:03 symfony [err] {sfError404Exception} Empty module and/or action a
 May 07 20:43:04 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/job/new" (/).
 May 07 20:43:04 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
 May 07 20:43:05 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/language/index" (/).
+May 08 22:57:26 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 08 22:57:28 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 08 22:57:31 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 08 22:57:33 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/category/index" (/).
+May 08 22:57:34 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 08 22:57:35 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/job/index" (/).
+May 08 22:57:35 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/job/new" (/).
+May 08 22:57:36 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/job/new" (/).
+May 08 22:57:37 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 08 22:57:39 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/language/index" (/).
