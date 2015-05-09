@@ -10,13 +10,12 @@
  */
 abstract class PluginJobeetAffiliateForm extends BaseJobeetAffiliateForm
 {
-  public function configure()
+  public function setup()
   {
-    $this->useFields(array(
-      'url', 
-      'email', 
-      'jobeet_categories_list'
-    ));
+    parent::setup();
+    
+    unset($this['is_active'], $this['token'], $this['created_at'], $this['updated_at']);
+    
     $this->widgetSchema['jobeet_categories_list']->setOption('expanded', true);
     $this->widgetSchema['jobeet_categories_list']->setLabel('Categories');
  

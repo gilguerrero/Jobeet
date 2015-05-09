@@ -10,7 +10,8 @@
  */
 abstract class PluginJobeetCategoryFormFilter extends BaseJobeetCategoryFormFilter
 {
-  public function configure()
+  public function setup()
   {
+  	parent::setup();
   }
 }

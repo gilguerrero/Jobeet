@@ -2,9 +2,9 @@
 	// lib/form/doctrine/BackendJobeetJobForm.class.php
 	abstract class PluginBackendJobeetJobForm extends JobeetJobForm
 	{
-	  public function configure()
+	  public function setup()
 	  {
-	    parent::configure();
+	    parent::setup();
 
 	    $this->widgetSchema['logo'] = new sfWidgetFormInputFileEditable(array(
 	      'label'     => 'Company logo',

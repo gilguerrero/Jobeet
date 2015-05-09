@@ -10,7 +10,8 @@
  */
 abstract class PluginJobeetJobFormFilter extends BaseJobeetJobFormFilter
 {
-  public function configure()
+  public function setup()
   {
+  	parent::setup();
   }
 }

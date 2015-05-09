@@ -10,8 +10,10 @@
  */
 abstract class PluginJobeetJobForm extends BaseJobeetJobForm
 {
-  public function configure()
+  public function setup()
   {
+    parent::setup();
+    
   	$this->removeFields();
     
     $this->validatorSchema['email'] = new sfValidatorAnd(array(

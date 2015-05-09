@@ -10,7 +10,8 @@
  */
 abstract class PluginJobeetAffiliateFormFilter extends BaseJobeetAffiliateFormFilter
 {
-  public function configure()
+  public function setup()
   {
+  	parent::setup();
   }
 }

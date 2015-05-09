@@ -10,8 +10,9 @@
  */
 abstract class PluginJobeetCategoryForm extends BaseJobeetCategoryForm
 {
-  public function configure()
+  public function setup()
   {
+    parent::setup();
   	unset(
       $this['jobeet_affiliates_list'],
       $this['created_at'], $this['updated_at']
