@@ -125,3 +125,16 @@ $browser->
     checkElement('table tr', 2)->
   end()
 ;
+
+$browser->
+  info('  7 - Job creation page')->
+ 
+  get('/fr/')->
+  with('view_cache')->isCached(true, false)->
+ 
+  createJob(array('category_id' => Doctrine_Core::getTable('CategoryTranslation')->findOneBySlug('programming')->getId()), true)->
+ 
+  get('/fr/')->
+  with('view_cache')->isCached(true, false)->
+  with('response')->checkElement('.category_programming .more_jobs', '/23/')
+;

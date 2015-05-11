@@ -1,10 +1,17 @@
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/04-Settings
-
+cache:
+  .settings:
+    error_reporting: <?php echo (E_ALL | E_STRICT)."\n" ?>
+    web_debug:       true
+    cache:           true
+    etag:            false
+    
 prod:
   .settings:
     no_script_name:         true
     logging_enabled:        false
+    cache: true
 
 dev:
   .settings:
@@ -17,13 +24,23 @@ dev:
 test:
   .settings:
     error_reporting:        <?php echo ((E_ALL | E_STRICT) ^ E_NOTICE)."\n" ?>
-    cache:                  false
+    cache:                  true
     web_debug:              false
     no_script_name:         false
     etag:                   false
 
 all:
+  .actions:
+    error_404_module: default
+    error_404_action: error404
   .settings:
+    enabled_modules:
+      - default
+      - sfJobeetAffiliate
+      - sfJobeetApi
+      - sfJobeetCategory
+      - sfJobeetJob
+      - sfJobeetLanguage
     standard_helpers: [Partial, Cache, I18N]
     i18n: true
     charset: utf-8

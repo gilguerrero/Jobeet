@@ -1,0 +1,3 @@
+# plugins/sfJobeetPlugin/modules/sfJobeetLanguage/config/cache.yml
+_language:
+  enabled: true

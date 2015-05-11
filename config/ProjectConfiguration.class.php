@@ -22,10 +22,15 @@ class ProjectConfiguration extends sfProjectConfiguration
   
   public function setup()
   {
+    // $this->setWebDir($this->getRootDir().'/public_html');
+    // $this->setCacheDir('/tmp/symfony_cache');
+    // $this->setLogDir('/tmp/symfony_logs');
+
     $this->enablePlugins(array(
       'sfDoctrinePlugin', 
       'sfDoctrineGuardPlugin',
-      'sfFormExtraPlugin'
+      'sfFormExtraPlugin',
+      'sfJobeetPlugin'
     ));
   }
 }
