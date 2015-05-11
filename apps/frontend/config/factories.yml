@@ -29,6 +29,21 @@ dev:
       delivery_strategy: none
 
 all:
+  user:
+  class: myUser
+  param:
+    timeout: 1800
+
+  storage:
+    class: sfPDOSessionStorage
+    param:
+      session_name: jobeet
+      db_table:     session
+      database:     propel
+      db_id_col:    id
+      db_data_col:  data
+      db_time_col:  time
+
   routing:
     class: sfPatternRouting
     param:
